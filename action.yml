@@ -1,0 +1,12 @@
+name: 'tlt task'
+description: 'Runs a single target with tlt'
+inputs:
+  target:
+    description: 'Target to run'
+    required: true
+    default: 'check'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.target }}
