@@ -1,4 +1,4 @@
-ARG VER=0.3.0
+ARG VER=0.3.1
 
 # Base container:
 FROM rrbutani/arm-llvm-toolchain:${VER}
